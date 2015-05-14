@@ -1,0 +1,35 @@
+@CHARSET "UTF-8";
+
+
+table{
+	width: 400px;
+}
+caption,td,th{ /*여러태그을 나열해서 지정할 수 있다  */
+	font-family: 휴먼옛체,굴림체;
+}
+th{
+	background-color: black;
+	color: yellow;
+}
+
+td{
+	background-color: #cccccc;
+	color: green;
+	text-align: center;
+}
+
+/* 
+   <input id='aaa'> : input#aaa
+   <td class='t1'>  : td.t1  
+
+ */
+td.t1{
+	text-align: left;
+	text-indent: 5px;
+}
+
+
+
+
+
+

@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Table예제</title>
+<!-- 
+ CSS
+ 1.inline방식 : tag내의 style지정
+ 2.선언적방식 : <head></head>사이에 <style></style>
+ 3.link방식   : 별도의 xxx.css화일생성 link방식
+ -->
+
+<style type="text/css">
+table{
+	/* width: 70%;  가변크기*/
+	width: 400px;
+}
+
+caption{
+	font-family: 휴먼옛체,궁서체;
+}
+
+th{
+	background-color: #222222; /* 0x222222 */
+	color: white;
+	font-family: 휴먼옛체;
+}
+
+td{
+    background-color: #cccccc;
+    color: blue;
+    font-family: 휴먼옛체;
+    /* text-indent: 5px; */ /* 들여쓰기 */
+    text-align: center; /* 정렬 */
+}
+
+</style>
+
+</head>
+<body>
+	<hr>
+	기본 테이블 Table
+	<hr>
+
+	<table border="0">
+		<caption>::::게시글 목록보기::::</caption>
+		<tr>
+			<th>번호</th>
+			<th>제목</th>
+			<th>작성자</th>
+			<th>조회수</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td style="text-align: left; text-indent: 5px;">첫번째글</td>
+			<td>일길동</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td style="text-align: left; text-indent: 5px;">두번째글 입니다</td>
+			<td>이길동</td>
+			<td>1</td>
+		</tr>
+	</table>
+
+	<hr>
+	Table 행/열합치기
+	<hr>
+
+	<table border='0'>
+		<caption>2013년도 판매현황</caption>
+		<tr>
+			<th rowspan='2'>기간</th>
+			<th colspan='3'>1사분기</th>
+		</tr>
+		<tr>
+			<th>1월</th>
+			<th>2월</th>
+			<th>3월</th>
+		</tr>
+		<tr>
+			<td>판매실적</td>
+			<td>30</td>
+			<td>28</td>
+			<td>33</td>
+		</tr>
+
+	</table>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

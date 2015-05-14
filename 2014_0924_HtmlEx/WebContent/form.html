@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Form Tag</title>
+<style type="text/css">
+
+input[type='submit'],input[type='reset']{
+	width: 80px;
+	border: 1px solid red;
+	background-color: #7777ff;
+	color: yellow;
+}
+</style>
+
+
+</head>
+<body>
+
+<form>
+<!-- form tag내에 있는 변수를 서버로 전송하기 위한 목적 
+     <input name=""> : 전송시 파라메터명 (서버측에 사용)
+     <input id="">   : 클라이언트(브라우저)에서 활용목적  
+-->
+아이디:<input type="text"       name="id" id="id" placeholder="아이디"><br>
+비밀번호:<input type="password" name="pwd" placeholder="비밀번호"><br> 
+<input type="submit" value="로그인"><!-- 지정된 action으로 전송 -->
+<input type="reset"  value="취소">  <!-- 입력항목취소:지워진다 -->
+</form>
+
+
+</body>
+</html>
